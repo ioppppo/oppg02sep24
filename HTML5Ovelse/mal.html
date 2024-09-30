@@ -6,7 +6,6 @@
     <style>
         #grid-container{
             position: relative;
-            text-align: center;
         }
         #back1 {
             background-size: cover;
@@ -14,12 +13,34 @@
         }
         #text1 {
             text-transform: uppercase;
+            text-align: center;
             color: #ffffff;
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -200%);
+            transform: translate(-50%, -120%);
             font-size: 50px;
+        }
+        #ul1 {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        li.list1 {
+            display: inline;
+            margin: 10px;
+            width: 100%;
+        }
+        li.list1 a {
+            text-decoration: none;
+        }
+        li.list1 a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: 505050;
         }
     </style>
 </head>
@@ -29,12 +50,12 @@
             <img src="C:\Users\ioppp\downloads\background1.jpg" alt="Bilde" id="back1" style="width:100%;">
             <h1 id="text1">Mal til Nettside</h1>
             <nav>
-                <ul>
-                    <li><a href=index.html>Hjem</a></li>
-                    <li><a href=correcting.html>Valideringsoppgave</a></li>
-                    <li><a href=mal.html>Nettside-mal</a></li>
-                    <li><a href=contact.html>Kontakt</a></li>
-                    <li><a href=oppskrift.html>Oppskrift</a></li>
+                <ul id="ul1">
+                    <li class="list1"><a href=index.html>Hjem</a></li>
+                    <li class="list1"><a href=correcting.html>Valideringsoppgave</a></li>
+                    <li class="list1"><a href=mal.html>Nettside-mal</a></li>
+                    <li class="list1"><a href=contact.html>Kontakt</a></li>
+                    <li class="list1"><a href=oppskrift.html>Oppskrift</a></li>
                 </ul>
             </nav>
         </header>
